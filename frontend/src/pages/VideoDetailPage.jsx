@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import apiClient from '../api/client';
+import apiClient, { getStorageUrl } from '../api/client';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import BreakingNewsTicker from '../components/layout/BreakingNewsTicker';
@@ -127,11 +127,11 @@ export default function VideoDetailPage() {
             {/* HTML5 Native Video Player */}
             <div className="relative aspect-video w-full bg-black rounded-2xl overflow-hidden shadow-xl border border-slate-200 flex items-center justify-center">
               <video
-                src={video.file_url || (video.file_path ? `http://localhost:8000/storage/${video.file_path}` : '')}
+                src={getStorageUrl(video.file_url || video.file_path)}
                 controls
                 playsInline
                 preload="auto"
-                poster={video.thumbnail_url}
+                poster={getStorageUrl(video.thumbnail_url || video.thumbnail_path)}
                 className="w-full h-full object-contain"
               />
             </div>
@@ -240,7 +240,7 @@ export default function VideoDetailPage() {
                     >
                       <div className="relative w-24 aspect-video bg-slate-900 rounded-lg overflow-hidden shrink-0">
                         {rVid.thumbnail_url ? (
-                          <img src={rVid.thumbnail_url} alt="" className="w-full h-full object-cover group-hover:scale-105 transition" />
+                          <img src={getStorageUrl(rVid.thumbnail_url || rVid.thumbnail_path)} alt="" className="w-full h-full object-cover group-hover:scale-105 transition" />
                         ) : (
                           <div className="w-full h-full flex items-center justify-center text-slate-600">
                             <FileVideo size={18} />

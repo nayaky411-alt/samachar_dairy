@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Play, Clock, MapPin, Eye, FileVideo } from 'lucide-react';
+import { getStorageUrl } from '../../api/client';
 
 export default function UploadedVideoCard({ video, onPlayClick }) {
   if (!video) return null;
@@ -17,7 +18,7 @@ export default function UploadedVideoCard({ video, onPlayClick }) {
         <Link to={videoUrl} className="block w-full h-full">
           {video.thumbnail_url ? (
             <img
-              src={video.thumbnail_url}
+              src={getStorageUrl(video.thumbnail_url || video.thumbnail_path)}
               alt={video.title}
               loading="lazy"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

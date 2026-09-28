@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Sparkles, TrendingUp, Compass, Newspaper, ArrowRight, Loader2 } from 'lucide-react';
-import apiClient from '../api/client';
+import apiClient, { getStorageUrl } from '../api/client';
 import { useLanguage } from '../context/LanguageContext';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
@@ -59,9 +59,12 @@ const HomePage = () => {
             <span className="text-[10px] uppercase font-bold text-slate-400 block mb-1">જાહેરાત (Advertisement)</span>
             <a href={data.advertisements.header_banner.destination_url || '#'} target="_blank" rel="noreferrer">
               <img
-                src={data.advertisements.header_banner.image_url}
+                src={getStorageUrl(data.advertisements.header_banner.image_url)}
                 alt={data.advertisements.header_banner.title}
                 className="max-h-24 sm:max-h-28 w-full object-cover rounded-lg"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                }}
               />
             </a>
           </div>

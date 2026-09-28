@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import apiClient from '../../api/client';
+import apiClient, { getStorageUrl } from '../../api/client';
 import { UploadCloud, Check, Copy, Image, FileText, AlertCircle } from 'lucide-react';
 
 export default function StaffMediaUploadPage() {
@@ -160,7 +160,7 @@ export default function StaffMediaUploadPage() {
             {uploadedMedia.map((m) => (
               <div key={m.id} className="p-3 bg-slate-50 border border-slate-200 rounded-xl flex items-center gap-3">
                 <img
-                  src={m.url}
+                  src={getStorageUrl(m.url)}
                   alt={m.filename}
                   className="w-16 h-16 object-cover rounded-lg border border-slate-200"
                 />

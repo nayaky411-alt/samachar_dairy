@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Monitor, Tablet, Smartphone, X, Clock, MapPin, User, ShieldCheck } from 'lucide-react';
+import { getStorageUrl } from '../../api/client';
 
 const PreviewModal = ({ article, onClose }) => {
   const [device, setDevice] = useState('desktop'); // desktop, tablet, mobile
@@ -111,7 +112,7 @@ const PreviewModal = ({ article, onClose }) => {
         {article.featured_image && (
           <div className="mb-6">
             <img
-              src={article.featured_image}
+              src={getStorageUrl(article.featured_image)}
               alt={article.title}
               className="w-full rounded-xl object-cover max-h-[420px] shadow-sm"
             />

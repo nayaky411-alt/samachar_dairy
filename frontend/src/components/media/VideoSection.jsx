@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Play, Clock, X } from 'lucide-react';
 import { Youtube } from '../common/BrandIcons';
 import { useLanguage } from '../../context/LanguageContext';
+import { getStorageUrl } from '../../api/client';
 
 const VideoSection = ({ videos = [] }) => {
   const [activeVideo, setActiveVideo] = useState(null);
@@ -35,7 +36,7 @@ const VideoSection = ({ videos = [] }) => {
           >
             <div className="relative aspect-16/9 bg-slate-900 overflow-hidden">
               <img
-                src={vid.thumbnail_url || `https://img.youtube.com/vi/${vid.video_id}/hqdefault.jpg`}
+                src={getStorageUrl(vid.thumbnail_url) || `https://img.youtube.com/vi/${vid.video_id}/hqdefault.jpg`}
                 alt={vid.title}
                 loading="lazy"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"

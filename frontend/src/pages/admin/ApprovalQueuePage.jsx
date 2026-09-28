@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import apiClient from '../../api/client';
+import apiClient, { getStorageUrl } from '../../api/client';
 import { 
   CheckSquare, FileText, Film, Camera, 
   Check, X, Eye, RefreshCw, AlertCircle, Clock, Calendar, 
@@ -346,7 +346,7 @@ export default function ApprovalQueuePage() {
                           className="relative w-28 sm:w-36 aspect-video bg-slate-900 rounded-xl overflow-hidden border border-slate-200 flex-shrink-0 cursor-pointer group shadow-2xs"
                         >
                           {vid.thumbnail_url ? (
-                            <img src={vid.thumbnail_url} alt="" className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                            <img src={getStorageUrl(vid.thumbnail_url || vid.thumbnail_path)} alt="" className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                           ) : (
                             <div className="w-full h-full flex items-center justify-center text-slate-500">
                               <FileVideo size={24} />
@@ -444,7 +444,7 @@ export default function ApprovalQueuePage() {
                     <div key={reel.id} className="p-5 hover:bg-slate-50 transition flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                       <div className="flex items-center gap-4">
                         {reel.thumbnail_url ? (
-                          <img src={reel.thumbnail_url} alt="" className="w-16 h-20 object-cover rounded-lg border border-slate-200 flex-shrink-0" />
+                          <img src={getStorageUrl(reel.thumbnail_url || reel.thumbnail_path)} alt="" className="w-16 h-20 object-cover rounded-lg border border-slate-200 flex-shrink-0" />
                         ) : (
                           <div className="w-16 h-20 bg-pink-100 text-pink-700 rounded-lg flex items-center justify-center flex-shrink-0">
                             <Film className="w-6 h-6" />
@@ -495,7 +495,7 @@ export default function ApprovalQueuePage() {
                     <div key={vid.id} className="p-5 hover:bg-slate-50 transition flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                       <div className="flex items-center gap-4">
                         <img 
-                          src={vid.thumbnail_url || `https://img.youtube.com/vi/${vid.video_id}/hqdefault.jpg`} 
+                          src={getStorageUrl(vid.thumbnail_url) || `https://img.youtube.com/vi/${vid.video_id}/hqdefault.jpg`} 
                           alt="" 
                           className="w-24 h-16 object-cover rounded-lg border border-slate-200 flex-shrink-0" 
                         />
@@ -544,7 +544,7 @@ export default function ApprovalQueuePage() {
                     <div key={gal.id} className="p-5 hover:bg-slate-50 transition flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                       <div className="flex items-center gap-4">
                         <img 
-                          src={gal.cover_image} 
+                          src={getStorageUrl(gal.cover_image)} 
                           alt="" 
                           className="w-20 h-16 object-cover rounded-lg border border-slate-200 flex-shrink-0" 
                         />

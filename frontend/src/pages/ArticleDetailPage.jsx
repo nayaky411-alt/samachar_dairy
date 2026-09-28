@@ -9,7 +9,7 @@ import {
   Loader2,
   RefreshCw,
 } from 'lucide-react';
-import apiClient from '../api/client';
+import apiClient, { getStorageUrl } from '../api/client';
 import { useLanguage } from '../context/LanguageContext';
 import NewsCard from '../components/news/NewsCard';
 import Header from '../components/layout/Header';
@@ -181,7 +181,7 @@ const ArticleDetailPage = () => {
                 {article.featured_image && (
                   <div className="mb-6 rounded-2xl overflow-hidden bg-slate-100 border border-slate-200">
                     <img
-                      src={article.featured_image}
+                      src={getStorageUrl(article.featured_image)}
                       alt={article.title}
                       className="w-full max-h-[480px] object-cover"
                       onError={(e) => {

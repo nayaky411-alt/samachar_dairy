@@ -1,5 +1,6 @@
 import React from 'react';
 import { X, Check, AlertTriangle, Clock, MapPin, User, FileVideo, HardDrive, CheckCircle2, Shield } from 'lucide-react';
+import { getStorageUrl } from '../../api/client';
 
 export default function VideoPreviewModal({ video, onClose, onApprove, onReject, isActionLoading = false }) {
   if (!video) return null;
@@ -31,11 +32,11 @@ export default function VideoPreviewModal({ video, onClose, onApprove, onReject,
           {/* Native HTML5 Video Player */}
           <div className="relative aspect-video w-full bg-black rounded-xl overflow-hidden shadow-md flex items-center justify-center border border-slate-800">
             <video
-              src={video.file_url || (video.file_path ? `http://localhost:8000/storage/${video.file_path}` : '')}
+              src={getStorageUrl(video.file_url || video.file_path)}
               controls
               playsInline
               preload="metadata"
-              poster={video.thumbnail_url}
+              poster={getStorageUrl(video.thumbnail_url || video.thumbnail_path)}
               className="w-full h-full object-contain"
             />
           </div>

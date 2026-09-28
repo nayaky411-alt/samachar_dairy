@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import apiClient from '../api/client';
+import apiClient, { getStorageUrl } from '../api/client';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import BreakingNewsTicker from '../components/layout/BreakingNewsTicker';
@@ -71,7 +71,7 @@ export default function AuthorPage() {
                 <div className="relative">
                   {author?.profile_image ? (
                     <img 
-                      src={author.profile_image} 
+                      src={getStorageUrl(author.profile_image)} 
                       alt={author.name} 
                       className="w-28 h-28 md:w-36 md:h-36 rounded-2xl object-cover shadow-md border-2 border-slate-100"
                     />

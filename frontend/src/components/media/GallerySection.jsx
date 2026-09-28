@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Camera, ChevronLeft, ChevronRight, X, Image as ImageIcon } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
+import { getStorageUrl } from '../../api/client';
 
 const GallerySection = ({ galleries = [] }) => {
   const [activeGallery, setActiveGallery] = useState(null);
@@ -49,7 +50,7 @@ const GallerySection = ({ galleries = [] }) => {
           >
             <div className="relative aspect-16/10 bg-slate-900 overflow-hidden">
               <img
-                src={gallery.cover_image || 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80'}
+                src={getStorageUrl(gallery.cover_image) || 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80'}
                 alt={gallery.title}
                 loading="lazy"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -101,7 +102,7 @@ const GallerySection = ({ galleries = [] }) => {
               <ChevronLeft size={28} />
             </button>
             <img
-              src={activeGallery.images[currentImageIndex]?.image_url}
+              src={getStorageUrl(activeGallery.images[currentImageIndex]?.image_url)}
               alt={activeGallery.images[currentImageIndex]?.caption || activeGallery.title}
               className="max-h-[75vh] max-w-full object-contain rounded-lg shadow-2xl"
             />

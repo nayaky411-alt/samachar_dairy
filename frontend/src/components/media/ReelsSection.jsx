@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Play, Eye, X, ExternalLink, Film, Clock, User, Share2 } from 'lucide-react';
 import { Instagram } from '../common/BrandIcons';
 import { useLanguage } from '../../context/LanguageContext';
+import { getStorageUrl } from '../../api/client';
 
 const ReelsSection = ({ reels = [] }) => {
   const [activeReel, setActiveReel] = useState(null);
@@ -36,7 +37,7 @@ const ReelsSection = ({ reels = [] }) => {
               className="group relative aspect-9/16 rounded-xl overflow-hidden bg-slate-900 cursor-pointer shadow-md hover:shadow-xl transition-all"
             >
               <img
-                src={reel.thumbnail_url || 'https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e0?auto=format&fit=crop&w=600&q=80'}
+                src={getStorageUrl(reel.thumbnail_url) || 'https://images.unsplash.com/photo-1519452635265-7b1fbfd1e4e0?auto=format&fit=crop&w=600&q=80'}
                 alt={reel.title}
                 loading="lazy"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-90"
@@ -129,8 +130,8 @@ const ReelsSection = ({ reels = [] }) => {
                 <div className="aspect-9/16 max-h-[460px] w-full rounded-xl overflow-hidden bg-black relative flex items-center justify-center shadow-lg border border-slate-800">
                   <video
                     key={activeReel.file_url}
-                    src={activeReel.file_url}
-                    poster={activeReel.thumbnail_url}
+                    src={getStorageUrl(activeReel.file_url)}
+                    poster={getStorageUrl(activeReel.thumbnail_url)}
                     controls
                     autoPlay
                     playsInline
@@ -142,7 +143,7 @@ const ReelsSection = ({ reels = [] }) => {
                 /* Instagram Reel Card with Link */
                 <div className="aspect-9/16 max-h-[420px] w-full rounded-xl overflow-hidden bg-black relative flex items-center justify-center">
                   <img
-                    src={activeReel.thumbnail_url}
+                    src={getStorageUrl(activeReel.thumbnail_url)}
                     alt={activeReel.title}
                     className="w-full h-full object-cover opacity-80"
                   />

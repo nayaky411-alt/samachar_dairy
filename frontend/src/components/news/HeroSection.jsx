@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Clock, MapPin, Sparkles } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
+import { getStorageUrl } from '../../api/client';
 
 const HeroSection = ({ articles = [] }) => {
   const { language, t } = useLanguage();
@@ -49,7 +50,7 @@ const HeroSection = ({ articles = [] }) => {
               className="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-200 shadow-md h-[380px] sm:h-[460px] flex flex-col justify-end cursor-pointer"
             >
               <img
-                src={mainStory.featured_image || fallbackImage}
+                src={getStorageUrl(mainStory.featured_image) || fallbackImage}
                 alt={mainStory.title}
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80"
               />
@@ -111,7 +112,7 @@ const HeroSection = ({ articles = [] }) => {
               >
                 <Link to={`/news/${storySlug}`} className="w-28 sm:w-32 h-20 sm:h-24 rounded-lg overflow-hidden bg-slate-100 shrink-0 block relative">
                   <img
-                    src={story.featured_image || fallbackImage}
+                    src={getStorageUrl(story.featured_image) || fallbackImage}
                     alt={story.title}
                     loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"

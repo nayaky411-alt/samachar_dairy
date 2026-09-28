@@ -19,7 +19,7 @@ import {
   Quote,
   Table as TableIcon,
 } from 'lucide-react';
-import apiClient from '../../api/client';
+import apiClient, { getStorageUrl } from '../../api/client';
 import { useAuth } from '../../context/AuthContext';
 
 const ArticleEditor = ({ initialData = null, isEdit = false }) => {
@@ -579,7 +579,7 @@ const ArticleEditor = ({ initialData = null, isEdit = false }) => {
               <div className="p-3 bg-slate-50 rounded-xl border border-slate-200">
                 <span className="text-xs font-bold text-slate-500 block mb-2">તસવીર પૂર્વાવલોકન (Preview):</span>
                 <img
-                  src={formData.featured_image}
+                  src={getStorageUrl(formData.featured_image)}
                   alt="Preview"
                   className="max-h-60 rounded-lg object-cover shadow-sm"
                 />

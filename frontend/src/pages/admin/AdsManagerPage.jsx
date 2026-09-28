@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import apiClient from '../../api/client';
+import apiClient, { getStorageUrl } from '../../api/client';
 import { Megaphone, Plus, Trash2, Edit, ExternalLink, AlertCircle, ToggleLeft, ToggleRight, Eye, MousePointer } from 'lucide-react';
 
 export default function AdsManagerPage() {
@@ -207,7 +207,7 @@ export default function AdsManagerPage() {
                 {ads.map((ad) => (
                   <tr key={ad.id} className="hover:bg-slate-50 transition">
                     <td className="px-5 py-3.5 flex items-center gap-3">
-                      <img src={ad.image_url} alt="" className="w-16 h-10 object-cover rounded border border-slate-200" />
+                      <img src={getStorageUrl(ad.image_url)} alt="" className="w-16 h-10 object-cover rounded border border-slate-200" />
                       <div>
                         <p className="font-bold text-slate-900 font-gujarati text-sm">{ad.title}</p>
                         <a href={ad.destination_url} target="_blank" rel="noreferrer" className="text-blue-600 hover:underline flex items-center gap-1 text-[11px] truncate max-w-xs">
