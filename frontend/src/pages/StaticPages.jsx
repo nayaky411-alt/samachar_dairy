@@ -27,7 +27,7 @@ const PageWrapper = ({ title, subtitle, children }) => (
 export const AboutPage = () => (
   <PageWrapper 
     title="અમારા વિશે (About Us)" 
-    subtitle="સમાચાર ડેરી ૨૪x૭ - ગુજરાતનું સૌથી વિશ્વસનીય અને તટસ્થ ડિજિટલ સમાચાર માધ્યમ"
+    subtitle="સમાચાર ડાયરી 24x9 - ગુજરાતનું સૌથી વિશ્વસનીય અને તટસ્થ ડિજિટલ સમાચાર માધ્યમ"
   >
     <div className="space-y-6 text-slate-700">
       <div className="flex items-center gap-3 p-4 bg-red-50 rounded-xl border border-red-200 text-red-900 mb-6">
@@ -40,7 +40,7 @@ export const AboutPage = () => (
 
       <h2 className="text-2xl font-bold text-slate-900 border-b pb-2">અમારો પરિચય અને સંકલ્પ</h2>
       <p>
-        <strong>સમાચાર ડેરી ૨૪x૭ (Samachar Dairy 247)</strong> એ ગુજરાત અને દેશભરના નાગરિકો માટે ૨૪ કલાક અવિરત કાર્યરત સ્વતંત્ર ડિજિટલ ન્યૂઝ પ્લેટફોર્મ છે. 
+        <strong>સમાચાર ડાયરી 24x9 (Samachar Dairy 247)</strong> એ ગુજરાત અને દેશભરના નાગરિકો માટે ૨૪ કલાક અવિરત કાર્યરત સ્વતંત્ર ડિજિટલ ન્યૂઝ પ્લેટફોર્મ છે. 
         અમદાવાદ સ્થિત મુખ્ય કાર્યાલય અને ગાંધીનગર બ્યુરો સહિત ગુજરાતના તમામ <strong>૩૩ જિલ્લાઓમાં</strong> અમારા ખાસ સંવાદદાતાઓ અને વિડિયો પત્રકારોની ટીમ કાર્યરત છે.
       </p>
 
@@ -77,7 +77,7 @@ export const AboutPage = () => (
 export const EditorialPolicyPage = () => (
   <PageWrapper 
     title="સંપાદકીય નીતિ (Editorial Policy)" 
-    subtitle="સમાચાર ડેરી ૨૪x૭ ના પત્રકારત્વના સિદ્ધાંતો અને આદર્શો"
+    subtitle="સમાચાર ડાયરી 24x9 ના પત્રકારત્વના સિદ્ધાંતો અને આદર્શો"
   >
     <div className="space-y-6 text-slate-700">
       <div className="p-4 bg-blue-50 border border-blue-200 rounded-xl text-blue-900 flex items-start gap-3">
@@ -90,7 +90,7 @@ export const EditorialPolicyPage = () => (
 
       <h2 className="text-xl font-bold text-slate-900 border-b pb-2">૧. સચોટતા અને તથ્ય ચકાસણી (Accuracy & Fact-Checking)</h2>
       <p>
-        અમે સનસનાટી ફેલાવવા કરતાં સચોટતાને મહત્વ આપીએ છીએ. સમાચાર ડેરી ૨૪x૭ ના ડેસ્ક પર આવતો દરેક અહેવાલ સિનિયર એડિટોરિયલ બોર્ડ દ્વારા સ્ક્રીન થયા બાદ જ વેબસાઈટ અને સોશિયલ મીડિયા પર રજૂ થાય છે.
+        અમે સનસનાટી ફેલાવવા કરતાં સચોટતાને મહત્વ આપીએ છીએ. સમાચાર ડાયરી 24x9 ના ડેસ્ક પર આવતો દરેક અહેવાલ સિનિયર એડિટોરિયલ બોર્ડ દ્વારા સ્ક્રીન થયા બાદ જ વેબસાઈટ અને સોશિયલ મીડિયા પર રજૂ થાય છે.
       </p>
 
       <h2 className="text-xl font-bold text-slate-900 border-b pb-2">૨. સ્વતંત્રતા અને તટસ્થતા (Independence & Impartiality)</h2>
@@ -119,7 +119,7 @@ export const CorrectionsPolicyPage = () => (
   >
     <div className="space-y-6 text-slate-700">
       <p>
-        <strong>સમાચાર ડેરી ૨૪x૭</strong> પોતાની ભૂલોને પારદર્શક રીતે સ્વીકારવામાં માને છે. જો કોઈ અહેવાલમાં હકીકત દોષ, જોડણી કે આંકડાકીય ક્ષતિ જણાશે તો અમે ત્વરિત સુધારો કરીએ છીએ.
+        <strong>સમાચાર ડાયરી 24x9</strong> પોતાની ભૂલોને પારદર્શક રીતે સ્વીકારવામાં માને છે. જો કોઈ અહેવાલમાં હકીકત દોષ, જોડણી કે આંકડાકીય ક્ષતિ જણાશે તો અમે ત્વરિત સુધારો કરીએ છીએ.
       </p>
 
       <h2 className="text-xl font-bold text-slate-900 border-b pb-2">સુધારાની પ્રક્રિયા (How We Handle Corrections)</h2>
@@ -150,7 +150,7 @@ export const PrivacyPolicyPage = () => (
   >
     <div className="space-y-6 text-slate-700">
       <p>
-        આ ગોપનીયતા નીતિ દર્શાવે છે કે જ્યારે તમે <strong>સમાચાર ડેરી ૨૪x૭</strong> વેબસાઇટ અને મોબાઇલ એપ્લિકેશનનો ઉપયોગ કરો છો ત્યારે તમારી માહિતી કેવી રીતે એકત્રિત, ઉપયોગ અને સુરક્ષિત કરવામાં આવે છે.
+        આ ગોપનીયતા નીતિ દર્શાવે છે કે જ્યારે તમે <strong>સમાચાર ડાયરી 24x9</strong> વેબસાઇટ અને મોબાઇલ એપ્લિકેશનનો ઉપયોગ કરો છો ત્યારે તમારી માહિતી કેવી રીતે એકત્રિત, ઉપયોગ અને સુરક્ષિત કરવામાં આવે છે.
       </p>
 
       <h2 className="text-xl font-bold text-slate-900 border-b pb-2">૧. અમે એકત્રિત કરીએ છીએ તે માહિતી</h2>
@@ -177,16 +177,16 @@ export const PrivacyPolicyPage = () => (
 export const TermsPage = () => (
   <PageWrapper 
     title="નિયમો અને શરતો (Terms of Service)" 
-    subtitle="સમાચાર ડેરી ૨૪x૭ પ્લેટફોર્મના વપરાશ અંગેની કાનૂની શરતો"
+    subtitle="સમાચાર ડાયરી 24x9 પ્લેટફોર્મના વપરાશ અંગેની કાનૂની શરતો"
   >
     <div className="space-y-6 text-slate-700">
       <p>
-        સમાચાર ડેરી ૨૪x૭ ની મુલાકાત લઈને તમે આ નિયમો અને શરતોનું પાલન કરવા સંમત થાઓ છો.
+        સમાચાર ડાયરી 24x9 ની મુલાકાત લઈને તમે આ નિયમો અને શરતોનું પાલન કરવા સંમત થાઓ છો.
       </p>
 
       <h2 className="text-xl font-bold text-slate-900 border-b pb-2">૧. કોપીરાઈટ અને બૌદ્ધિક સંપત્તિ (Copyright & IP)</h2>
       <p>
-        આ વેબસાઈટ પર પ્રકાશિત તમામ ટેક્સ્ટ, વિડિયો, ગ્રાફિક્સ અને ફોટોગ્રાફ્સ <strong>સમાચાર ડેરી ૨૪x૭</strong> ની માલિકીના છે. અમારી લેખિત પરવાનગી વિના કોઈપણ સામગ્રીનો વ્યાવસાયિક ઉપયોગ કરી શકાશે નહીં.
+        આ વેબસાઈટ પર પ્રકાશિત તમામ ટેક્સ્ટ, વિડિયો, ગ્રાફિક્સ અને ફોટોગ્રાફ્સ <strong>સમાચાર ડાયરી 24x9</strong> ની માલિકીના છે. અમારી લેખિત પરવાનગી વિના કોઈપણ સામગ્રીનો વ્યાવસાયિક ઉપયોગ કરી શકાશે નહીં.
       </p>
 
       <h2 className="text-xl font-bold text-slate-900 border-b pb-2">૨. વપરાશકર્તાની ટિપ્પણીઓ (User Comments Policy)</h2>
@@ -196,7 +196,7 @@ export const TermsPage = () => (
 
       <h2 className="text-xl font-bold text-slate-900 border-b pb-2">૩. શેરબજાર ડિસ્ક્લેમર (Market Disclaimer)</h2>
       <p className="bg-slate-100 p-4 rounded-xl border border-slate-200 text-sm">
-        <strong>મહત્વપૂર્ણ નોંધ:</strong> શેરબજાર અને કોમોડિટી માર્કેટ સંબંધિત માહિતી માત્ર શૈક્ષણિક અને માહિતીના હેતુ માટે છે. રોકાણ કરતા પહેલા તમારા અધિકૃત નાણાકીય સલાહકારની સલાહ અવશ્ય લો. સમાચાર ડેરી ૨૪x૭ કોઈપણ નુકસાન માટે જવાબદાર રહેશે નહીં.
+        <strong>મહત્વપૂર્ણ નોંધ:</strong> શેરબજાર અને કોમોડિટી માર્કેટ સંબંધિત માહિતી માત્ર શૈક્ષણિક અને માહિતીના હેતુ માટે છે. રોકાણ કરતા પહેલા તમારા અધિકૃત નાણાકીય સલાહકારની સલાહ અવશ્ય લો. સમાચાર ડાયરી 24x9 કોઈપણ નુકસાન માટે જવાબદાર રહેશે નહીં.
       </p>
     </div>
   </PageWrapper>
@@ -226,7 +226,7 @@ export const ContactPage = () => {
               <MapPin className="w-5 h-5 text-red-700 flex-shrink-0 mt-1" />
               <div>
                 <strong className="text-slate-900 block font-base">મુખ્ય કાર્યાલય (Head Office):</strong>
-                સમાચાર ડેરી ૨૪x૭ મીડિયા હાઉસ, એસ.જી. હાઇવે, અમદાવાદ - ૩૮૦૦૫૪, ગુજરાત.
+                સમાચાર ડાયરી 24x9 મીડિયા હાઉસ, એસ.જી. હાઇવે, અમદાવાદ - ૩૮૦૦૫૪, ગુજરાત.
               </div>
             </div>
 
@@ -365,7 +365,7 @@ export const AdvertisePage = () => (
       <div className="bg-gradient-to-r from-red-50 to-orange-50 p-6 rounded-2xl border border-red-200">
         <h3 className="text-xl font-bold text-red-900 mb-2">ગુજરાતનું સૌથી ઝડપથી વિકસતું ડિજિટલ સમાચાર નેટવર્ક</h3>
         <p className="text-slate-700 text-sm">
-          સમાચાર ડેરી ૨૪x૭ અમદાવાદ, સુરત, વડોદરા, રાજકોટ સહિત રાજ્યના તમામ ૩૩ જિલ્લાઓમાં દૈનિક લાખો વાચકો અને દર્શકો ધરાવે છે. 
+          સમાચાર ડાયરી 24x9 અમદાવાદ, સુરત, વડોદરા, રાજકોટ સહિત રાજ્યના તમામ ૩૩ જિલ્લાઓમાં દૈનિક લાખો વાચકો અને દર્શકો ધરાવે છે. 
           અમારા ડિજિટલ સ્લોટ્સ તમારા વ્યવસાયને યોગ્ય લક્ષિત ગ્રાહકો સુધી પહોંચાડવામાં મદદ કરશે.
         </p>
       </div>

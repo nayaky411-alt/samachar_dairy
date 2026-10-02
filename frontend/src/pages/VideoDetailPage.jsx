@@ -35,7 +35,7 @@ export default function VideoDetailPage() {
           setRelatedArticles(res.data.data.related_articles || []);
 
           // Set Page SEO Title
-          document.title = `${v.title} | સમાચાર ડેરી ૨૪x૭ વિડિયો`;
+          document.title = `${v.title} | સમાચાર ડાયરી 24x9 વિડિયો`;
 
           // Track view count
           apiClient.post(`/videos/${slug}/view`).catch(() => {});

@@ -32,7 +32,7 @@ const ArticleDetailPage = () => {
       .then(res => {
         if (res.data.success) {
           setData(res.data.data);
-          document.title = `${res.data.data.article.title} | સમાચાર ડેરી ૨૪x૭`;
+          document.title = `${res.data.data.article.title} | સમાચાર ડાયરી 24x9`;
         } else {
           setError(true);
         }

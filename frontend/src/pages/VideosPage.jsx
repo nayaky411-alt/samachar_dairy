@@ -12,7 +12,7 @@ const VideosPage = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.title = 'સત્તાવાર વિડીયો સમાચાર | સમાચાર ડેરી ૨૪x૭';
+    document.title = 'સત્તાવાર વિડીયો સમાચાર | સમાચાર ડાયરી 24x9';
 
     Promise.allSettled([
       apiClient.get('/videos'),

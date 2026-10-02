@@ -10,7 +10,7 @@ const GalleryPage = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.title = 'ફોટો સ્ટોરીઝ અને ગેલેરી | સમાચાર ડેરી ૨૪x૭';
+    document.title = 'ફોટો સ્ટોરીઝ અને ગેલેરી | સમાચાર ડાયરી 24x9';
     apiClient.get('/galleries')
       .then(res => {
         if (res.data.success) {

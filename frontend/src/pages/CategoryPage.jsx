@@ -39,7 +39,7 @@ const CategoryPage = () => {
           setCategory(res.data.data.category);
           setArticles(res.data.data.articles || []);
           setPagination(res.data.meta || { current_page: 1, last_page: 1 });
-          document.title = `${res.data.data.category?.name_gu || 'સમાચાર'} | સમાચાર ડેરી ૨૪x૭`;
+          document.title = `${res.data.data.category?.name_gu || 'સમાચાર'} | સમાચાર ડાયરી 24x9`;
         }
       })
       .catch(() => {})

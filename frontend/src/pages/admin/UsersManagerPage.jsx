@@ -73,7 +73,7 @@ export default function UsersManagerPage() {
             પત્રકારો & સ્ટાફ મેનેજમેન્ટ (Team & Journalists)
           </h1>
           <p className="text-xs text-slate-500 font-gujarati mt-0.5">
-            સમાચાર ડેરી ૨૪x૭ ના સંપાદકો, સંવાદદાતાઓ અને જિલ્લા પ્રતિનિધિઓનું સંચાલન
+            સમાચાર ડાયરી 24x9 ના સંપાદકો, સંવાદદાતાઓ અને જિલ્લા પ્રતિનિધિઓનું સંચાલન
           </p>
         </div>
         <button

@@ -9,7 +9,7 @@ const ReelsPage = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.title = 'સત્તાવાર રીલ્સ અને શોર્ટ વિડીયો | સમાચાર ડેરી ૨૪x૭';
+    document.title = 'સત્તાવાર રીલ્સ અને શોર્ટ વિડીયો | સમાચાર ડાયરી 24x9';
     apiClient.get('/reels')
       .then(res => {
         if (res.data.success) {

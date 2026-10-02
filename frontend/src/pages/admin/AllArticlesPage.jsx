@@ -92,7 +92,7 @@ export default function AllArticlesPage() {
             તમામ સમાચાર આર્કાઇવ (All Articles CMS)
           </h1>
           <p className="text-xs text-slate-500 font-gujarati mt-0.5">
-            સમાચાર ડેરી ૨૪x૭ ના તમામ પ્રકાશિત, ડ્રાફ્ટ અને આર્કાઇવ કરાયેલા અહેવાલો
+            સમાચાર ડાયરી 24x9 ના તમામ પ્રકાશિત, ડ્રાફ્ટ અને આર્કાઇવ કરાયેલા અહેવાલો
           </p>
         </div>
         <Link

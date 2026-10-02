@@ -6,12 +6,12 @@ const OFFICIAL_DEFAULTS = {
   site_name_en: 'Samachar Diary',
   site_tagline: 'ગુજરાતનું અગ્રણી અને સૌથી વિશ્વસનીય ડિજિટલ સમાચાર માધ્યમ. તથ્યપૂર્ણ પત્રકારત્વ અને નિષ્પક્ષ અહેવાલો.',
   site_logo_url: '',
-  office_address: 'Shop No 11, SWARNIM DHARTI, 60 Meter Road, Sardar Patel Ring Rd, Near Sardardham, Ahmedabad, Khodiyar, Gujarat - 382501, India',
+  office_address: ' Shop NO FFB-11, SWARNIM DHARTI, 60 Meter Road, Sardar Patel Ring Rd, Near Sardardham, Ahmedabad, Khodiyar, Gujarat - 382501, India',
   city: 'Ahmedabad, Khodiyar',
   state: 'Gujarat',
   pincode: '382501',
   country: 'India',
-  contact_email: 'samachardiaryx7@gmail.com',
+  contact_email: 'info@samachardiary24x7.in',
   contact_phone: '+91 79 2658 9000',
   social_instagram: 'https://www.instagram.com/samachardiary/',
   social_youtube: 'https://www.youtube.com/@SamacharDiary24x7',
@@ -20,14 +20,14 @@ const OFFICIAL_DEFAULTS = {
   social_whatsapp: 'https://whatsapp.com/channel/samachardairy247',
   social_telegram: 'https://t.me/samachardairy247',
   google_maps_url: 'https://www.google.com/maps/search/?api=1&query=Shop+No+11+SWARNIM+DHARTI+60+Meter+Road+Sardar+Patel+Ring+Rd+Near+Sardardham+Ahmedabad+Khodiyar+Gujarat+382501+India',
-  footer_description: 'સમાચાર ડેરી ૨૪x૭ - ગુજરાત અને દેશ-વિદેશના તાજા સમાચાર, બ્રેકિંગ ન્યૂઝ, શેરબજાર અને ગ્રાઉન્ડ રિપોર્ટ્સનું વિશ્વસનીય ડિજિટલ પ્લેટફોર્મ.',
+  footer_description: 'સમાચાર ડાયરી 24x9 - ગુજરાત અને દેશ-વિદેશના તાજા સમાચાર, બ્રેકિંગ ન્યૂઝ, શેરબજાર અને ગ્રાઉન્ડ રિપોર્ટ્સનું વિશ્વસનીય ડિજિટલ પ્લેટફોર્મ.',
   copyright_text: '© {year} Samachar Diary. All Rights Reserved.',
 };
 
 const SettingsContext = createContext({
   settings: OFFICIAL_DEFAULTS,
   loading: true,
-  refreshSettings: async () => {},
+  refreshSettings: async () => { },
   getDirectionsUrl: () => '',
   getCopyrightText: () => '',
 });

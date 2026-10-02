@@ -45,7 +45,7 @@ export default function SettingsPage() {
     google_maps_url: 'https://www.google.com/maps/search/?api=1&query=Shop+No+11+SWARNIM+DHARTI+60+Meter+Road+Sardar+Patel+Ring+Rd+Near+Sardardham+Ahmedabad+Khodiyar+Gujarat+382501+India',
 
     // Contact
-    contact_email: 'samachardiaryx7@gmail.com',
+    contact_email: 'info@samachardiary24x7.in',
     contact_phone: '+91 79 2658 9000',
 
     // Social Media
@@ -57,7 +57,7 @@ export default function SettingsPage() {
     social_telegram: 'https://t.me/samachardairy247',
 
     // Footer & Legal
-    footer_description: 'સમાચાર ડેરી ૨૪x૭ - ગુજરાત અને દેશ-વિદેશના તાજા સમાચાર, બ્રેકિંગ ન્યૂઝ, શેરબજાર અને ગ્રાઉન્ડ રિપોર્ટ્સનું વિશ્વસનીય ડિજિટલ પ્લેટફોર્મ.',
+    footer_description: 'સમાચાર ડાયરી 24x9 - ગુજરાત અને દેશ-વિદેશના તાજા સમાચાર, બ્રેકિંગ ન્યૂઝ, શેરબજાર અને ગ્રાઉન્ડ રિપોર્ટ્સનું વિશ્વસનીય ડિજિટલ પ્લેટફોર્મ.',
     copyright_text: '© {year} Samachar Diary. All Rights Reserved.',
   });
 

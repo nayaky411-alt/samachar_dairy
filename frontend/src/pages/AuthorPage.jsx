@@ -96,7 +96,7 @@ export default function AuthorPage() {
                   </div>
 
                   <p className="text-slate-600 font-gujarati text-sm md:text-base leading-relaxed mb-4 max-w-3xl">
-                    {author?.bio || 'સમાચાર ડેરી ૨૪x૭ ના ખાસ સંવાદદાતા તરીકે ગુજરાત અને દેશ-વિદેશના મહત્વપૂર્ણ રાજકીય, સામાજિક અને સ્થાનિક પ્રશ્નો પર સચોટ વિશ્લેષણ રજૂ કરે છે.'}
+                    {author?.bio || 'સમાચાર ડાયરી 24x9 ના ખાસ સંવાદદાતા તરીકે ગુજરાત અને દેશ-વિદેશના મહત્વપૂર્ણ રાજકીય, સામાજિક અને સ્થાનિક પ્રશ્નો પર સચોટ વિશ્લેષણ રજૂ કરે છે.'}
                   </p>
 
                   <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 text-xs md:text-sm text-slate-500 font-gujarati pt-3 border-t border-slate-100">

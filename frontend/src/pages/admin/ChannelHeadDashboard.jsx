@@ -103,7 +103,7 @@ export default function ChannelHeadDashboard() {
           </span>
           <h1 className="text-2xl font-bold mt-2 font-gujarati">નમસ્તે, {user?.name || 'મુખ્ય સંપાદક'}</h1>
           <p className="text-red-100/80 text-xs sm:text-sm mt-1 font-gujarati">
-            સમાચાર ડેરી ૨૪x૭ - સંપાદકીય મંજૂરીઓ, બ્રેકિંગ ન્યૂઝ અને પત્રકારોનું મોનિટરિંગ.
+            સમાચાર ડાયરી 24x9 - સંપાદકીય મંજૂરીઓ, બ્રેકિંગ ન્યૂઝ અને પત્રકારોનું મોનિટરિંગ.
           </p>
         </div>
 
